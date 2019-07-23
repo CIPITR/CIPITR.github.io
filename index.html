@@ -3,17 +3,17 @@
 <head>
 <title>Complex Imperative Program Induction with Terminal Rewards</title>
 </head>
-<body>
-
+<body style="margin: 20%; text-align: justify; font-family: 'Trebuchet MS', Georgia, Helvetica, Sans-serif">
+<div style="text-align: center">
 <h1>Complex Imperative Program Induction with Terminal Rewards</h1>
-
+</div>
+<br/>
 <h2>Complex Forms of KB based Question Answering in real world problems</h2>
 <p> Question answering (QA) is a core problem in AI; almost every interactive task involving natural language can be modeled as a QA problem. For <i>e.g.</i> a QA model should be able to answer the following questions </p>
 <ul>
 <li> ‘Can Tazocin or Zosyn be used intravenously to treat renal problems in pregnant women?’ <i>(in the healthcare domain)</i></li>
 <li> ‘How many investors purchased restricted stock within a quarter of opening their account?' <i>(in finance domain)</i></li>
 <li> ‘Which of the last five movies by the Russo Brothers gained most positive sentiment from the public?’ <i>(in open domain)</i></li>
-<li>
 <li> ‘Which countries have more rivers and lakes than Brazil?‘ <i>(Geographical domain)</i></li>
 </ul> 
 <br/>
@@ -45,9 +45,25 @@
 <li>Next it has to find the time of purchasing and opening account and then apply the time constraint of a quarter and finally count the number of such investors.</li>
 <li>Only if this decomposition was correctly done, the model would reach the correct answer and get some positive reward.</li>
 </ul>
+<figure>
+  <div style="text-align: center">	
+  <img src="fig1.png" width="650" alt="The Pulpit Rock">
+  </div>
+</figure>
+
 <br/>
 <h2>Overcoming the challenges in CIPITR through Neural Symbolic Reasoning</h2>
 <p>This extreme reward sparsity compounded by the sheer size of the program space increases the variance of the model resulting in local minima issues and learning instability. In order to pragmatically search in this combinatorial space of possible programs, the neural model has to incorporate generic programming rules, just as human programmers do, as symbolic constraints in its search. Along with that it should also be able to incorporate task or schema level constraints, to ensure that the programs generated are indeed consistent with the background Knowledge Base (KB) and can generate a meaningful answer.</p>
+<figure>
+  <div style="text-align: center">	
+  <img src="fig2.png" width="400" alt="The Pulpit Rock">
+  </div>
+</figure>
+<figure>
+  <div style="text-align: center">	
+  <img src="fig3.png" width="400" alt="The Pulpit Rock">
+  </div>
+</figure>
 <br/>
 
 <h2>Performance of CIPITR in comparison to contemporary Program Induction Models</h2>
@@ -56,10 +72,11 @@ Overcoming these challenges, CIPITR scored at least 3x higher than the competing
 
 And on one of the hardest class of queries (comparative reasoning) with 5–10 steps, CIPITR outperformed state-of-the-art neural program induction models by a factor of 89 times.
 
-<p>Applicability of CIPITR</p>
+<h2>Applicability of CIPITR</h2>
 This makes CIPITR one of the very first successes at widening the applicability of complex program induction paradigm to various real-world settings, by eliminating the need for oracle program supervision during training. And it also shows significant potential in pushing the frontiers of complex reasoning tasks in various settings, like answering questions or conversing strategically over multiple modalities (like text/images/videos) in a more human-like fashion.
 
 This research on Complex Program Induction for Querying Knowledge Bases in the Absence of Gold Programs has been published in MIT Press Journals, and will be presented at this week’s ACL Conference in Florence, Italy. 
+<br/>
 <a href=https://github.com/CIPITR/CIPITR>Code</a>
 <a href=http://lifelongqa.sl.cloud9.ibm.com:3000/>Demo</a>
 
