@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html xmlns:og="og: http://ogp.me/ns#">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>CIPITR | IBM Research Labs India Pvt. Ltd.</title>
+        
+          <meta name="author" content="CIPITR">
+        
+        <meta name="title" content="CIPITR" >
+        <link rel="icon" type="image/png" href="http://localhost:4000/favicon.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta property="og:title" content="CIPITR" />
+<meta name="twitter:title" content="CIPITR" />
+
+<meta name="keywords" content="some, relevant, keywords, for, usage, in metatags" />
+
+
+<meta name="description" content="Complex Imperative Program Induction with Terminal Rewards
+
+">
+<meta property="og:description" content="Complex Imperative Program Induction with Terminal Rewards
+
+" />
+<meta name="twitter:description" content="Complex Imperative Program Induction with Terminal Rewards
+
+" />
+<meta property="og:type" content="article" />
+<link rel="canonical" href="http://example.com/2019/07/24/CIPITR.html" />
+
+<meta property="og:image" content="http://example.com/sharer.png" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:image" content="http://example.com/sharer.png" />
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    </head>
+    <body class="wrap">
+      <!--[if lt IE 8]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+      <![endif]-->
+      <header>
+  <h1 class="site-title"><a href="/">IBM Research Labs India Pvt. Ltd.</a></h1>
+  <nav class="main-nav">
+    <a href="#" class="opener show-on-mobiles">...</a>
+    <div class="clear-opener show-on-mobiles"></div>
+    <div class="grid">
+      <ul>
+        <li><a href="/"><i class="fa fa-home"></i>Home</a></li>
+        <li><a href="/about.html"><i class="fa fa-info-circle"></i>About</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+      <section class="content">
+        <div id="home" class="grid post">
+<div class="unit whole">
+<article>
+	<header>
+		<h1>CIPITR</h1>
+		<p class="meta">
+			<time class="timeago postlist-meta" datetime="2019-07-24"><i class="fa fa-calendar"></i>July 24, 2019</time>
+			<a class="sharer facebook" href="#" target="_blank" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u='+window.location.href,'_blank','height=300,width=600');return false;"><i class="fa fa-facebook"></i></a>
+			
+				<a class="sharer twitter" href="#" target="_blank" onclick="window.open('https://twitter.com/share?url='+window.location.href,'_blank','height=300,width=600');return false;"><i class="fa fa-twitter"></i></a>
+			
+		</p>
+	</header>
+	<section>
+		
+		<h1 id="complex-imperative-program-induction-with-terminal-rewards">Complex Imperative Program Induction with Terminal Rewards</h1>
+
+<p>You need to enable JavaScript to run this app.</p>
+
+<div id="root"></div>
+<div id="tpopup" style="text-align: center">
+    <iframe style="background: #FFFFFF;" src="https://docs.google.com/presentation/d/1xXO59GfzurOUOBCWcblvJAkynEK47YHfut4wuowua1k/embed?usp=sharing&amp;start=true&amp;loop=true&amp;delayms=3000" frameborder="0" width="640" height="389" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+</div>
+
+<h2 id="complex-forms-of-kb-based-question-answering-in-real-world-problems">Complex Forms of KB based Question Answering in real world problems</h2>
+
+<p>Question answering (QA) is a core problem in AI; almost every interactive task involving natural language can be modeled as a QA problem. For <em>e.g.</em> a QA model should be able to answer the following questions</p>
+
+<ul>
+  <li>‘Can Tazocin or Zosyn be used intravenously to treat renal problems in pregnant women?’ <em>(in the healthcare domain)</em></li>
+  <li>‘How many investors purchased restricted stock within a quarter of opening their account?’ <em>(in finance domain)</em></li>
+  <li>‘Which of the last five movies by the Russo Brothers gained most positive sentiment from the public?’ <em>(in open domain)</em></li>
+  <li>‘Which countries have more rivers and lakes than Brazil?‘ <em>(Geographical domain)</em></li>
+</ul>
+
+<h2 id="traditional-and-contemporary-ways-of-solving-qa">Traditional and Contemporary Ways of Solving QA</h2>
+
+<p>In the recent years the proliferation of deep learning has revolutionized the modeling of QA tasks, taking away the dependency on poorly scalable human-intensive rule based models and ushering a new era of learning neural representations of the query and its transformation to reach the answer.</p>
+
+<p>However such models still are prone to making blatant mistakes, especially as queries become more and more complex and even when it answers correctly, the reasoning followed by it is not interpretable by end users.</p>
+
+<h2 id="neural-program-induction-for-complex-tasks">Neural Program Induction for Complex Tasks</h2>
+
+<p>Rather, a more intuitive way of approaching a complex task like QA would be to learn to deconstruct it into a sequence of simpler steps, as humans usually do. Motivated by this, researchers in the deep learning era, developed a new learning paradigm, called Neural Program Induction, through which the AI model can be taught to procedurally decompose a complex task into a program i.e. a sequence of atomic actions, which on execution will lead to the answer.</p>
+
+<p>However research on this paradigm has been restricted to simpler tasks like sorting or addition of numbers or simple multi-hop QA over small database tables or knowledge bases, and more importantly under impractical assumptions that the true program is provided as supervision during training by an Oracle.</p>
+
+<h2 id="our-contribution-weak-supervised-neural-program-induction-for-complex-kbqa">Our Contribution: Weak Supervised Neural Program Induction for Complex KBQA</h2>
+
+<p>Considering these practical limitations, we made a very first attempt at training a model, <em>Complex Imperative Program Induction from Terminal Rewards (CIPITR)</em> to answer complex questions, without either of the constraints used in the past.</p>
+
+<ul>
+  <li>Firstly the questions can be complex; requiring sometimes 7-12 steps of reasonings of different flavors, while some steps might require logical reasoning, other steps might need comparative or quantitative analysis.</li>
+  <li>Secondly the questions need to be answered based on a large scale knowledge base of over 50 million facts.</li>
+  <li>And thirdly and most importantly, the model is trained with only the question-answer pairs as supervision and can learn to induce program without the need for the oracle program during training.</li>
+</ul>
+
+<h2 id="challenges-faced-by-cipitr">Challenges Faced by CIPITR</h2>
+
+<p>For a complex question like ‘How many investors purchased restricted stock within a quarter of opening their account?’ the model has to first understand that the query is talking about concepts like ‘investors, ‘restricted stock’, ‘quarter’ and relations between concepts like ‘purchased’ and ‘opening’ and then map them to facts in the Financial Knowledge Base. Even when this is done perfectly, the space of possible programs induced is exponential (~10^19), out of which only a few can yield a positive reward. For <em>e.g.</em></p>
+
+<ul>
+  <li>CIPITR has to first find out which investors opened account, and then which of them purchased restricted stock.</li>
+  <li>Next it has to find the time of purchasing and opening account and then apply the time constraint of a quarter and finally count the number of such investors.</li>
+  <li>Only if this decomposition was correctly done, the model would reach the correct answer and get some positive reward.</li>
+</ul>
+
+<p><img src="https://www.dropbox.com/s/wijawz8yusams5s/fig1.png?dl=1" width="650" alt="The Pulpit Rock" /></p>
+
+<h2 id="overcoming-the-challenges-in-cipitr-through-neural-symbolic-reasoning">Overcoming the challenges in CIPITR through Neural Symbolic Reasoning</h2>
+
+<p>This extreme reward sparsity compounded by the sheer size of the program space increases the variance of the model resulting in local minima issues and learning instability. In order to pragmatically search in this combinatorial space of possible programs, the neural model has to incorporate generic programming rules, just as human programmers do, as symbolic constraints in its search. Along with that it should also be able to incorporate task or schema level constraints, to ensure that the programs generated are indeed consistent with the background Knowledge Base (KB) and can generate a meaningful answer.</p>
+
+<div style="text-align: center" width="500">  
+  <img src="https://www.dropbox.com/s/7c34yyf0kf0o50h/fig2.png?dl=1" width="500" alt="The Pulpit Rock" />
+  <figcaption>Incorporating symbolic constraints for sampling meaningful operators</figcaption>
+  </div>
+<p><br /><br /></p>
+<div style="text-align: center" width="500">  
+  <img src="https://www.dropbox.com/s/c01x570wlksjznd/fig3.png?dl=1" width="500" alt="The Pulpit Rock" />
+  <figcaption>Incorporating symbolic constraints for sampling meaningful instantiations of arguments. Example shown for a question <i>“Which rivers originate in China and flow through both India and Bangladesh?”</i></figcaption>
+  </div>
+<p><br /><br /></p>
+
+<p>You need to enable JavaScript to run this app.</p>
+
+<div id="root"></div>
+<div id="tpopup" style="text-align: center">
+    <iframe style="background: #FFFFFF;" src="https://docs.google.com/presentation/d/1MTlf1ZJAL5wOLngQFOOG86wkWpzoTMPSxLMauWLVtyE/embed?usp=sharing&amp;start=true&amp;loop=true&amp;delayms=3000" frameborder="0" width="640" height="389" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+</div>
+
+<h2 id="performance-of-cipitr-in-comparison-to-contemporary-program-induction-models">Performance of CIPITR in comparison to contemporary Program Induction Models</h2>
+
+<p>Overcoming these challenges, CIPITR scored at least 3x higher than the competing systems for moderately complex queries requiring 2–5 step programs. And on one of the hardest class of queries (comparative reasoning) with 5–10 steps, CIPITR outperformed state-of-the-art neural program induction models by a factor of 89 times.</p>
+
+<h2 id="applicability-of-cipitr">Applicability of CIPITR</h2>
+
+<p>This makes CIPITR one of the very first successes at widening the applicability of complex program induction paradigm to various real-world settings, by eliminating the need for oracle program supervision during training. And it also shows significant potential in pushing the frontiers of complex reasoning tasks in various settings, like answering questions or conversing strategically over multiple modalities (like text/images/videos) in a more human-like fashion. This research on Complex Program Induction for Querying Knowledge Bases in the Absence of Gold Programs has been published in MIT Press Journals, and will be presented at this week’s ACL Conference in Florence, Italy.<br />
+<a href="https://github.com/CIPITR/CIPITR">Code</a> <a href="http://lifelongqa.sl.cloud9.ibm.com:3000/">Demo</a></p>
+
+
+	</section>
+	
+</article>
+</div>
+</div>
+      </section>
+      <footer class="grid site-footer">
+        <p>&copy;&nbsp;IBM Research Labs India Pvt. Ltd.</p>
+        <p><small>Powered by <a href="http://jekyllrb.com" target="_blank"><em>Jekyll</em></a> using <a href="http://bitwiser.in/bitwiser/" target="_blank"><em>Bitwiser</em></a> theme.</small></p>
+      </footer>
+      
+      <script src="/js/script.js"></script>
+    </body>
+</html>
