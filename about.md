@@ -11,7 +11,7 @@ This work was done at IBM Research Labs, India, Pvt. Ltd.
 
 # Authors
 * Amrita Saha
-* [Ghulam Ahmed Ansari](http://bit.ly/ansariresume)
+* [Ghulam Ahmed Ansari](https://ahmedansari.github.io/)
 * Abhishek Laddha
 * Karthik Sankaranarayanan
 * Soumen Chakrabarti
